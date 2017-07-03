@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Academico Ayudantes</title>
+    <link rel="shortcut icon" href="img/icono.png" alt ="logo"/>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="imagen">
+        <img id="logo" src="img/logo-ayudantes.png" alt="logo" width="70" height="100">
+      </div>
+      <h1 class="tit">CONTROL DE AYUDANTIAS</h1>
+      <h2 class="tit"> ESPOL</h2>
+      
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav_navbar-nav">
+                <li><a class="navbar-brand" href="#">Inicio</a></li>
+                <li><a class="navbar-brand" href="#">Sign in</a></li>
+                <li><a class="navbar-brand" href="#" >Interactua </a></li>
+                <li class="dropdown">
+                  <a class="navbar-brand" data-toggle="dropdown" href="">More<b class="caret"></b></a>
+              
+                  <!--<ul class="dropdown-menu">-->
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a class="dividir" href="#">Horarios</a></li>
+                    <li><a class="" href="#">Foro</a></li>
+                  <!--
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>-->
+                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>      
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+
+<!--contenido BODY-->
+<div class="container" style="padding-top: 60px;">
+  <h1 class="page-header">Editar Perfil....</h1>
+  <div class="row">
+    <!-- left column -->
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="text-center">
+        <img src="img/arelys.jpg" class="avatar img-circle img-thumbnail" alt="avatar">
+        <h6>Agregar una nueva foto...</h6>
+        <input type="file" class="text-center center-block well well-sm">
+      </div>
+    </div>
+    <!-- edit form column -->
+    <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+      <div class="alert alert-info alert-dismissable">
+        <a class="panel-close close" data-dismiss="alert">×</a> 
+        <i class="fa fa-coffee"></i>
+        This is an <strong>.alert</strong>. Use this to show important messages to the user.
+      </div>
+      <h3>Información Personal</h3>
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Nombre:</label>
+          <div class="col-lg-8">
+            <input class="form-control" value="Jane" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Apellido:</label>
+          <div class="col-lg-8">
+            <input class="form-control" value="Bishop" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Universidad:</label>
+          <div class="col-lg-8">
+            <input class="form-control" value="" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Correo Electronico:</label>
+          <div class="col-lg-8">
+            <input class="form-control" value="aremvint@espol.edu.ec.com" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Time Zone:</label>
+          <div class="col-lg-8">
+            <div class="ui-select">
+              <select id="user_time_zone" class="form-control">
+                <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                <option value="Alaska">(GMT-09:00) Alaska</option>
+                <option value="Pacific Time (US & Canada)">(GMT-08:00) Pacific Time (US & Canada)</option>
+                <option value="Arizona">(GMT-07:00) Arizona</option>
+                <option value="Mountain Time (US & Canada)">(GMT-07:00) Mountain Time (US & Canada)</option>
+                <option value="Central Time (US & Canada)" selected="selected">(GMT-06:00) Central Time (US & Canada)</option>
+                <option value="Eastern Time (US & Canada)">(GMT-05:00) Eastern Time (US & Canada)</option>
+                <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Usuario:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="janeuser" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Contraseña:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="11111122333" type="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Confirmar Contraseña:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="11111122333" type="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label"></label>
+          <div class="col-md-8">
+            <input class="btn btn-primary" value="Guardar Cambios" type="button">
+            <span></span>
+            <input class="btn btn-default" value="Cancelar" type="reset">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!--footer start from here-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 footerleft ">
+        <div class="logofooter"> </div>
+            <img id="logo-footer" src="img/logofooter.png" alt="logo" width="70" height="70">
+        <!--<p>Página creada con el fin de ayudar a los ayudantes.</p>-->
+        <p><i class="fa fa-map-pin"></i> Campus Gustavo Galindo, Guayaquil-Ecuador </p>
+        <p><i class="fa fa-phone"></i> Phone (India) : +91 9999 878 398</p>
+        <!--<p><i class="fa fa-envelope"></i> E-mail : info@webenlance.com</p>-->
+        
+      </div>
+      <!--<div class="col-md-2 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">Pagina AYUDANTES</h6>
+        <ul class="footer-ul">
+         <!-- <li><a href="#"> Career</a></li>
+          <li><a href="#"> Privacy Policy</a></li>
+          <li><a href="#"> Terms & Conditions</a></li>
+          <li><a href="#"> Client Gateway</a></li>
+          <li><a href="#"> Ranking</a></li>
+          <li><a href="#"> Case Studies</a></li>
+          <li><a href="#"> Frequently Ask Questions</a></li>-->
+        <!--</ul>
+      </div>-->
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7"></h6>
+        <div class="post">
+         <!-- <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>-->
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <div class="fb-page" data-href="https://www.facebook.com/espol/" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          <div class="fb-xfbml-parse-ignore">
+            <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/espol/">Facebook</a></blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--footer start from here-->
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-6">
+      <p>© 2017 - Todos los derechos reservados</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="bottom_ul">
+        <li><a href="#">webenlance.com</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Faq's</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Site Map</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+  </body>
+</html>
